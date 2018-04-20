@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+.Home {
+  padding: 309px 100px;
+  span {
+    @include match-h3;
+    color: $white1;
+    line-height: 1.3;
+
+    .home-arrow {
+    }
+  }
+
+  .element4 {
+    color: rgba(255,255,255,.4);
+  }
+
+  .home-arrow {
+    font-size: 40px;
+    color: rgba(255,255,255,.4);
+    margin-left: 66px;
+   /* opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;*/
+  }
+
+ /* @keyframes typedjsBlink {
+    50% { opacity: 0.0; }
+  }
+  @-webkit-keyframes typedjsBlink {
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+  }
+  .typed-fade-out {
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
+  }*/
+}

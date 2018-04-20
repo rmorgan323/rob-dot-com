@@ -1,0 +1,74 @@
+/******  GLOBAL CSS VARIABLES  ******/
+/***  COLORS  ***/
+/***  FONTS  ***/
+* {
+  font-size: 16px;
+  font-family: "azo-sans-web", sans-serif;
+  outline: none;
+  color: #6d6e71; }
+
+h1 {
+  font-family: "vortice-concept", sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "azo-sans-web", sans-serif;
+  line-height: 1.3; }
+
+h1 {
+  font-size: 18px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 900; }
+
+::placeholder {
+  opacity: .5;
+  text-align: center; }
+
+/***  MIXINS  ***/
+.Home {
+  padding: 309px 100px;
+  /* @keyframes typedjsBlink {
+    50% { opacity: 0.0; }
+  }
+  @-webkit-keyframes typedjsBlink {
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+  }
+  .typed-fade-out {
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
+  }*/ }
+  .Home span {
+    font-family: "azo-sans-web", sans-serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.3; }
+  .Home .element4 {
+    color: rgba(255, 255, 255, 0.4); }
+  .Home .home-arrow {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-left: 66px;
+    /* opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;*/ }
