@@ -43,6 +43,9 @@ p {
 
 /***  MIXINS  ***/
 .Home {
+  min-height: 3000px;
+  background-color: #5c7ee5;
+  transition: background-color .7s ease-in-out;
   padding: 309px 100px;
   /* @keyframes typedjsBlink {
     50% { opacity: 0.0; }
@@ -72,3 +75,9 @@ p {
     /* opacity: 1;
     animation: typedjsBlink 0.7s infinite;
     -webkit-animation: typedjsBlink 0.7s infinite;*/ }
+
+.red-bg {
+  background-color: #ff6d40; }
+
+.green-bg {
+  background-color: #4dff4d; }
