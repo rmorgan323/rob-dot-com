@@ -43,5 +43,5 @@ p {
 
 /***  MIXINS  ***/
 .App {
-  min-height: 100vh;
-  background-color: #5c7ee5; }
+  /*min-height: 100vh;*/
+  /*background-color: $blue4;*/ }

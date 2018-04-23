@@ -1,6 +1,9 @@
 @import '../../variables.scss';
 
 .Home {
+  min-height: 3000px;
+  background-color: $blue4;
+  transition: background-color .7s ease-in-out;
   padding: 309px 100px;
   span {
     @include match-h3;
@@ -38,4 +41,12 @@
     -webkit-animation: 0;
     animation: 0;
   }*/
+}
+
+.red-bg {
+  background-color: $orange4;
+}
+
+.green-bg {
+  background-color: $green4;
 }

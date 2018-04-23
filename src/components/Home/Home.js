@@ -5,6 +5,9 @@ import Typed from 'typed.js';
 class Home extends Component {
 
   componentDidMount = () => {
+
+    window.addEventListener('scroll', this.handleScroll);
+
     const options = {
       strings: ["Hi, I'm Rob Morgan."],
       showCursor: false,
@@ -48,6 +51,22 @@ class Home extends Component {
 
   componentWillUnmount = () => {
     this.typed.destroy();
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (window.scrollY <= 800) {
+      document.querySelector('.Home').classList.remove('red-bg');
+    }
+    if (window.scrollY > 800) {
+      document.querySelector('.Home').classList.add('red-bg');
+    }
+    if (window.scrollY <= 1600) {
+      document.querySelector('.Home').classList.remove('green-bg');
+    }
+    if (window.scrollY > 1600) {
+      document.querySelector('.Home').classList.add('green-bg');
+    }
   }
 
 
