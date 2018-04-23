@@ -57,15 +57,34 @@ class Home extends Component {
   handleScroll = () => {
     if (window.scrollY <= 800) {
       document.querySelector('.Home').classList.remove('red-bg');
+      document.querySelector('.logo-left').classList.remove('logo-red');
+      document.querySelector('h1').classList.remove('logo-text-red');
+      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
+      nodes.map(node => node.classList.remove('red-text'));
     }
     if (window.scrollY > 800) {
       document.querySelector('.Home').classList.add('red-bg');
+      document.querySelector('.logo-left').classList.add('logo-red');
+      document.querySelector('h1').classList.add('logo-text-red');
+
+      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
+      nodes.map(node => node.classList.add('red-text'));
     }
     if (window.scrollY <= 1600) {
       document.querySelector('.Home').classList.remove('green-bg');
+      document.querySelector('.logo-left').classList.remove('logo-green');
+      document.querySelector('h1').classList.remove('logo-text-green');
+
+      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
+      nodes.map(node => node.classList.remove('green-text'));
     }
     if (window.scrollY > 1600) {
       document.querySelector('.Home').classList.add('green-bg');
+      document.querySelector('.logo-left').classList.add('logo-green');
+      document.querySelector('h1').classList.add('logo-text-green');
+
+      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
+      nodes.map(node => node.classList.add('green-text'));
     }
   }
 
