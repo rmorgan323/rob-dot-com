@@ -15,7 +15,7 @@ class Home extends Component {
       startDelay: 900
     }
     const options2 = {
-      strings: ["I'm a software developer."],
+      strings: ["I'm a web developer."],
       typeSpeed: 20,
       showCursor: false,
       startDelay: 2800
@@ -27,7 +27,7 @@ class Home extends Component {
       startDelay: 4500
     }
     const options4 = {
-      strings: ["Stuff. ^400 This way."],
+      strings: ["It's this way."],
       typeSpeed: 20,
       backSpeed: 30,
       showCursor: false,
@@ -38,7 +38,7 @@ class Home extends Component {
       typeSpeed: 20,
       backSpeed: 40,
       showCursor: false,
-      startDelay: 11500
+      startDelay: 11000
     }
 
     this.typed = new Typed(this.element, options);
@@ -55,36 +55,44 @@ class Home extends Component {
   }
 
   handleScroll = () => {
-    if (window.scrollY <= 800) {
-      document.querySelector('.Home').classList.remove('red-bg');
-      document.querySelector('.logo-left').classList.remove('logo-red');
-      document.querySelector('h1').classList.remove('logo-text-red');
-      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
-      nodes.map(node => node.classList.remove('red-text'));
+    if (window.scrollY > 300) {
+      document.querySelector('.Header').classList.add('header-size');
+      document.querySelector('.Header h1').classList.add('logo-size');
     }
-    if (window.scrollY > 800) {
-      document.querySelector('.Home').classList.add('red-bg');
-      document.querySelector('.logo-left').classList.add('logo-red');
-      document.querySelector('h1').classList.add('logo-text-red');
 
-      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
-      nodes.map(node => node.classList.add('red-text'));
+    if (window.scrollY <= 300) {
+      document.querySelector('.Header').classList.remove('header-size');
+      document.querySelector('.Header h1').classList.remove('logo-size');
     }
-    if (window.scrollY <= 1600) {
+
+    if (window.scrollY <= 550) {
       document.querySelector('.Home').classList.remove('green-bg');
       document.querySelector('.logo-left').classList.remove('logo-green');
       document.querySelector('h1').classList.remove('logo-text-green');
-
       const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
       nodes.map(node => node.classList.remove('green-text'));
     }
-    if (window.scrollY > 1600) {
+    if (window.scrollY > 550) {
       document.querySelector('.Home').classList.add('green-bg');
       document.querySelector('.logo-left').classList.add('logo-green');
       document.querySelector('h1').classList.add('logo-text-green');
 
       const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
       nodes.map(node => node.classList.add('green-text'));
+    }
+    if (window.scrollY <= 1600) {
+      document.querySelector('.Home').classList.remove('red-bg');
+      document.querySelector('.logo-left').classList.remove('logo-red');
+      document.querySelector('h1').classList.remove('logo-text-red');
+      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
+      nodes.map(node => node.classList.remove('red-text'));
+    }
+    if (window.scrollY > 1600) {
+      document.querySelector('.Home').classList.add('red-bg');
+      document.querySelector('.logo-left').classList.add('logo-red');
+      document.querySelector('h1').classList.add('logo-text-red');
+      const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
+      nodes.map(node => node.classList.add('red-text'));
     }
   }
 
@@ -109,6 +117,30 @@ class Home extends Component {
           className="home-arrow"
           ref={(element5) => { this.element5 = element5; }}
         ></span>
+
+        <div className="phone-container">
+          <div className="phone">
+            <div className="top"></div>
+            <div className="left"></div>
+            <div className="center"></div>
+            <div className="right"></div>
+            <div className="bottom"></div>
+            <div className="back"></div>
+            <div className="bottom-right-1"></div>
+            <div className="bottom-right-2"></div>
+            <div className="bottom-left-1"></div>
+            <div className="bottom-left-2"></div>
+            <div className="top-right-1"></div>
+            <div className="top-right-2"></div>
+            <div className="top-left-1"></div>
+            <div className="top-left-2"></div>
+          </div>
+          <div className="phone-text">
+            <h2>Snap Ninja</h2>
+            <p>Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. </p>
+          </div>
+        </div>
+
       </div>
     )
   }

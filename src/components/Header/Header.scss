@@ -3,11 +3,14 @@
 .Header {
   background-color: $white1;
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: height .3s ease-in-out;
+  box-shadow: 0px -4px 73px 0px rgba(0,0,0,0.31);
 
   h1 {
     display: flex;
@@ -15,7 +18,7 @@
     margin: auto;
     width: fit-content;
     color: $blue1;
-    transition: color .7s ease-in-out;
+    transition: all .3s ease-in-out, color .7s ease-in-out;
   }
 
   h5 {
@@ -52,28 +55,44 @@
     transition: background-color .7s ease-in-out;
   }
 
+  .logo-green {
+    background-color: $green4;
+  }
+
   .logo-red {
     background-color: $orange4;
   }
 
-  .logo-green {
-    background-color: $green4;
+  .logo-text-green {
+    color: $green1;
   }
 
   .logo-text-red {
     color: $orange1;
   }
 
-  .logo-text-green {
-    color: $green1;
+  .green-text {
+    color: $green4 !important;
+  }
+
+  .green-text:hover {
+    color: $green5 !important;
+  }
+
+  .red-text {
+    color: $orange4 !important;
+  }
+
+  .red-text:hover {
+    color: $orange5 !important;
   }
 }
 
-
-.red-text {
-  color: $orange4 !important;
+.header-size {
+  height: 70px;
 }
 
-.green-text {
-  color: $green4 !important;
+.logo-size {
+  transform: scale(.7);
 }
+

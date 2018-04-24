@@ -12,7 +12,7 @@ $grey7: #231f20;
 $green1: #dbffdb;
 $green2: #b8ffb8;
 $green3: #94ff94;
-$green4: #4dff4d;
+$green4: #3fe03f;
 $green5: #278027;
 $green6: #134013;
 
@@ -64,7 +64,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: $font-display;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 h1 { font-size: $h1 }
@@ -76,8 +76,9 @@ h6 { font-size: $h6 }
 
 p {
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.5;
   font-weight: 900;
+  font-family: $font-para;
 }
 
 ::placeholder {

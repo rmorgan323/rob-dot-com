@@ -12,7 +12,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "azo-sans-web", sans-serif;
-  line-height: 1.3; }
+  line-height: 1.5; }
 
 h1 {
   font-size: 18px; }
@@ -34,8 +34,9 @@ h6 {
 
 p {
   font-size: 14px;
-  line-height: 1.3;
-  font-weight: 900; }
+  line-height: 1.5;
+  font-weight: 900;
+  font-family: "azo-sans-web", sans-serif; }
 
 ::placeholder {
   opacity: .5;
@@ -46,38 +47,207 @@ p {
   min-height: 3000px;
   background-color: #5c7ee5;
   transition: background-color .7s ease-in-out;
-  padding: 309px 100px;
-  /* @keyframes typedjsBlink {
-    50% { opacity: 0.0; }
-  }
-  @-webkit-keyframes typedjsBlink {
-    0% { opacity: 1; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1; }
-  }
-  .typed-fade-out {
-    opacity: 0;
-    transition: opacity .25s;
-    -webkit-animation: 0;
-    animation: 0;
+  padding: 39vh 100px;
+  /* .snap-ninja-image {
+    display: block;
+    width: 400px;
+    margin-top: 400px;
+    transform: rotateY(-20deg) rotateX(-20deg) rotateZ(25deg);
   }*/ }
   .Home span {
     font-family: "azo-sans-web", sans-serif;
     font-size: 24px;
     color: #fff;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-weight: 300; }
   .Home .element4 {
-    color: rgba(255, 255, 255, 0.4); }
+    font-weight: 900;
+    /*color: rgba(255,255,255,.4);*/ }
   .Home .home-arrow {
+    font-weight: 900;
     font-size: 40px;
-    color: rgba(255, 255, 255, 0.4);
-    margin-left: 66px;
-    /* opacity: 1;
-    animation: typedjsBlink 0.7s infinite;
-    -webkit-animation: typedjsBlink 0.7s infinite;*/ }
+    /*color: rgba(255,255,255,.4);*/
+    margin-left: 52px; }
+  .Home .phone-container {
+    margin-top: 550px;
+    display: flex;
+    cursor: pointer; }
+  .Home .phone-text {
+    position: absolute;
+    width: 500px;
+    margin-left: calc(38vw);
+    padding-top: 83px; }
+    .Home .phone-text h2 {
+      color: #fff; }
+    .Home .phone-text p {
+      color: #fff;
+      font-weight: 300;
+      font-size: 20px; }
+  .Home .phone {
+    perspective: 1500px;
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin-left: 100px;
+    transform: rotateY(15deg) rotateX(50deg) rotateZ(-5deg) scale(1.6);
+    transform-style: preserve-3d;
+    transition: all .7s ease-in-out; }
+  .Home .phone-container:hover .phone {
+    transform: rotateY(0deg) rotateY(0deg) scale(2); }
+  .Home .phone-container:hover .center {
+    box-shadow: -50px 50px 73px 0px rgba(0, 0, 0, 0.25); }
+  .Home .center {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: #fff;
+    background: url("/photo-sn-2.png");
+    background-size: auto 100%;
+    transform-style: preserve-3d;
+    border-radius: 16px;
+    outline: 1px solid transparent;
+    /* prevent jagged edges in firefox */
+    box-shadow: -20px 21px 73px 0px rgba(0, 0, 0, 0.31);
+    transition: box-shadow .5s ease-in-out; }
+  .Home .back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: #ddd;
+    background-size: auto 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-15px);
+    border-radius: 16px;
+    outline: 1px solid transparent;
+    /* prevent jagged edges in firefox */
+    /*   opacity: .3; */ }
+  .Home .left {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 100%;
+    width: 15px;
+    height: 370px;
+    background: #ddd;
+    transform-origin: 100% 50%;
+    transform: rotateY(-90deg); }
+  .Home .right {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    width: 15px;
+    height: 370px;
+    background: #ddd;
+    transform-origin: 0% 0%;
+    transform: rotateY(90deg); }
+  .Home .top {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 15px;
+    height: 170px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(90deg) rotateZ(90deg); }
+  .Home .bottom {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    width: 15px;
+    height: 170px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(90deg) rotateZ(90deg); }
+  .Home .bottom-right-1 {
+    content: '';
+    position: absolute;
+    top: 385px;
+    left: 188px;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(60deg); }
+  .Home .bottom-right-2 {
+    content: '';
+    position: absolute;
+    top: 394px;
+    left: 183px;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(30deg); }
+  .Home .bottom-left-1 {
+    content: '';
+    position: absolute;
+    top: 385px;
+    right: 100%;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(120deg); }
+  .Home .bottom-left-2 {
+    content: '';
+    position: absolute;
+    top: 394px;
+    right: 195px;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(150deg); }
+  .Home .top-right-1 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 173px;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(150deg); }
+  .Home .top-right-2 {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 182px;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(120deg); }
+  .Home .top-left-1 {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 185px;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(30deg); }
+  .Home .top-left-2 {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 194px;
+    width: 12px;
+    height: 15px;
+    background: #ddd;
+    transform-origin: 100% 0%;
+    transform: rotateX(270deg) rotateZ(0deg) rotateY(60deg); }
+
+.green-bg {
+  background-color: #3fe03f; }
 
 .red-bg {
   background-color: #ff6d40; }
-
-.green-bg {
-  background-color: #4dff4d; }
