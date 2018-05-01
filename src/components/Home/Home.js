@@ -122,7 +122,10 @@ class Home extends Component {
           <div className="phone">
             <div className="top"></div>
             <div className="left"></div>
+            <div className="center-bg"></div>
             <div className="center"></div>
+            <div className="home-button"></div>
+            <div className="speaker"></div>
             <div className="right"></div>
             <div className="bottom"></div>
             <div className="back"></div>
