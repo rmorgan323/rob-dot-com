@@ -55,24 +55,30 @@ class Home extends Component {
   }
 
   handleScroll = () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 270) {
       document.querySelector('.Header').classList.add('header-size');
       document.querySelector('.Header h1').classList.add('logo-size');
+      document.querySelector('.Header .header-left-resume').classList.add('resume-small');
+      document.querySelector('.Header .header-left-linkedin').classList.add('linkedin-small');
+      document.querySelector('.Header .header-left-github').classList.add('github-small');
     }
 
-    if (window.scrollY <= 300) {
+    if (window.scrollY <= 270) {
       document.querySelector('.Header').classList.remove('header-size');
       document.querySelector('.Header h1').classList.remove('logo-size');
+      document.querySelector('.Header .header-left-resume').classList.remove('resume-small');
+      document.querySelector('.Header .header-left-linkedin').classList.remove('linkedin-small');
+      document.querySelector('.Header .header-left-github').classList.remove('github-small');
     }
 
-    if (window.scrollY <= 550) {
+    if (window.scrollY <= 270) {
       document.querySelector('.Home').classList.remove('green-bg');
       document.querySelector('.logo-left').classList.remove('logo-green');
       document.querySelector('h1').classList.remove('logo-text-green');
       const nodes = [].slice.call(document.querySelectorAll('.Header h5'));
       nodes.map(node => node.classList.remove('green-text'));
     }
-    if (window.scrollY > 550) {
+    if (window.scrollY > 270) {
       document.querySelector('.Home').classList.add('green-bg');
       document.querySelector('.logo-left').classList.add('logo-green');
       document.querySelector('h1').classList.add('logo-text-green');
@@ -139,8 +145,12 @@ class Home extends Component {
             <div className="top-left-2"></div>
           </div>
           <div className="phone-text">
-            <h2>Snap Ninja</h2>
-            <p>Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. Snap Ninja text. </p>
+            <div className="header-container">
+              <img src="/snap-ninja-logo.svg" /><h2>Snap Ninja</h2>
+            </div>
+            <p>Snap Ninja began as an idea to encourage collaboration and mentorship among students&mdash;a central theme at Turing School of Software & Design&mdash;and an important and common practice in the tech community.</p>
+            <p>So we took a learning concept the tech world often gets right and encouraged students to join the fun.</p>
+            <a className="details">DETAILS</a><span>&#8226;</span><span>&#8226;</span><span>&#8226;</span><a href="https://t-laird.com/snap-ninja/" className="live">LIVE VERSION</a>
           </div>
         </div>
 

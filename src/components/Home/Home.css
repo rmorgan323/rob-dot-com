@@ -76,13 +76,43 @@ p {
     position: absolute;
     width: 500px;
     margin-left: calc(38vw);
-    padding-top: 83px; }
+    padding-top: 15px; }
     .Home .phone-text h2 {
       color: #fff; }
     .Home .phone-text p {
       color: #fff;
       font-weight: 300;
-      font-size: 20px; }
+      font-size: 20px;
+      margin: 5px 0; }
+    .Home .phone-text a {
+      font-family: "azo-sans-web", sans-serif;
+      font-size: 16px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #278027;
+      line-height: 2;
+      transition: all .3s ease-in-out;
+      text-decoration: none;
+      opacity: .6; }
+    .Home .phone-text a:hover {
+      opacity: 1; }
+    .Home .phone-text span {
+      color: #278027;
+      opacity: .5;
+      font-size: 14px;
+      margin: 6px;
+      position: relative;
+      bottom: 1px; }
+    .Home .phone-text .details {
+      margin-right: 6px; }
+    .Home .phone-text .live {
+      margin-left: 6px; }
+    .Home .phone-text .header-container {
+      display: flex;
+      align-items: center; }
+    .Home .phone-text img {
+      width: 33px;
+      margin-right: 12px; }
   .Home .phone {
     perspective: 1500px;
     position: relative;
@@ -93,7 +123,7 @@ p {
     transform-style: preserve-3d;
     transition: all .7s ease-in-out; }
   .Home .phone-container:hover .phone {
-    transform: rotateY(0deg) rotateY(0deg) scale(2); }
+    transform: rotateY(0deg) rotateY(0deg) scale(1.8); }
   .Home .phone-container:hover .center {
     box-shadow: -50px 50px 73px 0px rgba(0, 0, 0, 0.25); }
   .Home .center-bg {
