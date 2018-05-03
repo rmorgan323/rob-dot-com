@@ -44,7 +44,7 @@
     position: absolute;
     width: 500px;
     margin-left: calc(38vw);
-    padding-top: 83px;
+    padding-top: 15px;
     h2 {
       color: #fff;
     }
@@ -52,6 +52,42 @@
       color: #fff;
       font-weight: 300;
       font-size: 20px;
+      margin: 5px 0;
+    }
+    a {
+      @include match-p;
+      font-size: 14px;
+      font-weight: bold;
+      color: $green5;
+      line-height: 2;
+      @include std-transition;
+      text-decoration: none;
+      opacity: .6;
+    }
+    a:hover {
+      opacity: 1;
+    }
+    span {
+      color: $green5;
+      opacity: .5;
+      font-size: 14px;
+      margin: 6px;
+      position: relative;
+      bottom: 1px;
+    }
+    .details {
+      margin-right: 6px;
+    }
+    .live {
+      margin-left: 6px;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 33px;
+      margin-right: 12px;
     }
   }
 
@@ -68,7 +104,7 @@
 
   .phone-container:hover {
     .phone {
-      transform: rotateY(0deg) rotateY(0deg) scale(2);
+      transform: rotateY(0deg) rotateY(0deg) scale(1.8);
     }
 
     .center {

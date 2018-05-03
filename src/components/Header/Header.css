@@ -63,17 +63,37 @@ p {
     transition: all .3s ease-in-out, color .7s ease-in-out; }
   .Header h5 {
     color: #5c7ee5;
-    transition: color .7s ease-in-out; }
+    transition: color .7s ease-in-out, font-size .3s ease-in-out; }
   .Header .header-left {
     text-decoration: none;
-    position: absolute;
-    left: 25px; }
+    position: absolute; }
   .Header .header-left-resume {
-    top: 15px; }
+    top: 15px;
+    left: 25px;
+    transition: all .3s ease-in-out; }
   .Header .header-left-linkedin {
-    top: 40px; }
+    top: 40px;
+    left: 25px;
+    transition: all .3s ease-in-out; }
   .Header .header-left-github {
-    top: 65px; }
+    top: 65px;
+    left: 25px;
+    transition: all .3s ease-in-out; }
+  .Header .resume-small {
+    top: 5px;
+    left: 10px; }
+    .Header .resume-small h5 {
+      font-size: 12px; }
+  .Header .linkedin-small {
+    top: 26px;
+    left: 10px; }
+    .Header .linkedin-small h5 {
+      font-size: 12px; }
+  .Header .github-small {
+    top: 47px;
+    left: 10px; }
+    .Header .github-small h5 {
+      font-size: 12px; }
   .Header .logo-left {
     display: flex;
     width: 61px;

@@ -23,25 +23,54 @@
 
   h5 {
     color: $blue4;
-    transition: color .7s ease-in-out;
+    transition: color .7s ease-in-out, font-size .3s ease-in-out;
   }
 
   .header-left {
     text-decoration: none;
     position: absolute;
-    left: 25px;
   }
 
   .header-left-resume {
     top: 15px;
+    left: 25px;
+    transition: all .3s ease-in-out;
   }
 
   .header-left-linkedin {
     top: 40px;
+    left: 25px;
+    transition: all .3s ease-in-out;
   }
 
   .header-left-github {
     top: 65px;
+    left: 25px;
+    transition: all .3s ease-in-out;
+  }
+
+  .resume-small {
+    top: 5px;
+    left: 10px;
+    h5 {
+      font-size: 12px;
+    }
+  }
+
+  .linkedin-small {
+    top: 26px;
+    left: 10px;
+    h5 {
+      font-size: 12px;
+    }
+  }
+
+  .github-small {
+    top: 47px;
+    left: 10px;
+    h5 {
+      font-size: 12px;
+    }
   }
 
   .logo-left {
